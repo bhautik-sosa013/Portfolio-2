@@ -5,7 +5,7 @@ import styles from "./i18n.module.scss";
 const LanguageSelector: React.FC = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("es");
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
